@@ -1,0 +1,23 @@
+# Baseline FedAvg experiment - no DP, no defenses
+experiment_name: "baseline_pathmnist"
+dataset: "pathmnist"
+num_clients: 10
+num_rounds: 20
+local_epochs: 5
+batch_size: 32
+learning_rate: 0.001
+device: "cpu"
+
+# Data distribution
+non_iid: true
+non_iid_alpha: 0.5
+
+# No attackers for pure baseline
+attacker_fraction: 0.0
+attack_type: null
+
+# No DP
+use_dp: false
+
+# Standard FedAvg
+aggregation_method: "fedavg"

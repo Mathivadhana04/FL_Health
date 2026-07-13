@@ -1,0 +1,23 @@
+experiment_name: "asfa_pathmnist_custom"
+dataset: "pathmnist"
+num_clients: 5
+num_rounds: 5
+local_epochs: 3
+batch_size: 32
+learning_rate: 0.001
+device: "cpu"
+non_iid: true
+non_iid_alpha: 0.5
+attacker_fraction: 0.3
+attack_type: "label_flip"
+use_dp: true
+noise_multiplier: 1.0
+max_grad_norm: 1.0
+target_epsilon: 10.0
+delta: 1e-5
+aggregation_method: "median"
+quarantine_rounds: 3
+rollback_drop_threshold: 0.15
+anomaly_percentile: 80.0
+z_score_threshold: 2.5
+client_sizes: [20, 50, 50, 75, 60]

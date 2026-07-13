@@ -1,0 +1,27 @@
+# DP-SGD experiment - differential privacy without robust aggregation
+experiment_name: "dp_pathmnist"
+dataset: "pathmnist"
+num_clients: 10
+num_rounds: 20
+local_epochs: 5
+batch_size: 32
+learning_rate: 0.001
+device: "cpu"
+
+# Data distribution
+non_iid: true
+non_iid_alpha: 0.5
+
+# Light attack to show DP alone doesn't defend against poisoning
+attacker_fraction: 0.2
+attack_type: "label_flip"
+
+# DP configuration
+use_dp: true
+noise_multiplier: 1.0
+max_grad_norm: 1.0
+target_epsilon: 10.0
+delta: 1e-5
+
+# Standard FedAvg (DP doesn't help against poisoning)
+aggregation_method: "fedavg"

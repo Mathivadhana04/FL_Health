@@ -1,0 +1,78 @@
+C:\Users\Mathivadhana\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\opacus\privacy_engine.py:98: UserWarning: Secure RNG turned off. This is perfectly fine for experimentation as it allows for much faster training performance, but remember to turn it on and retrain one last time before production with ``secure_mode`` turned on.
+  warnings.warn(
+C:\Users\Mathivadhana\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\opacus\accountants\analysis\rdp.py:332: UserWarning: Optimal order is the largest alpha. Please consider expanding the range of alphas to get a tighter privacy bound.
+  warnings.warn(
+c:\Users\Mathivadhana\Downloads\fl-health-project\experiments\..\clients\client.py:139: UserWarning: Full backward hook is firing when gradients are computed with respect to module outputs since no inputs require gradients. See https://docs.pytorch.org/docs/main/generated/torch.nn.Module.html#torch.nn.Module.register_full_backward_hook for more details.
+  loss.backward()
+C:\Users\Mathivadhana\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\opacus\accountants\analysis\prv\prvs.py:67: RuntimeWarning: divide by zero encountered in log
+  z = np.log(np.where(t > np.log(1 - q), (np.exp(t) + q - 1) / q, 1))
+C:\Users\Mathivadhana\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\opacus\accountants\analysis\prv\prvs.py:70: RuntimeWarning: divide by zero encountered in log
+  t > np.log(1 - q),
+C:\Users\Mathivadhana\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\opacus\privacy_engine.py:98: UserWarning: Secure RNG turned off. This is perfectly fine for experimentation as it allows for much faster training performance, but remember to turn it on and retrain one last time before production with ``secure_mode`` turned on.
+  warnings.warn(
+C:\Users\Mathivadhana\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\opacus\accountants\analysis\rdp.py:332: UserWarning: Optimal order is the largest alpha. Please consider expanding the range of alphas to get a tighter privacy bound.
+  warnings.warn(
+c:\Users\Mathivadhana\Downloads\fl-health-project\experiments\..\clients\client.py:139: UserWarning: Full backward hook is firing when gradients are computed with respect to module outputs since no inputs require gradients. See https://docs.pytorch.org/docs/main/generated/torch.nn.Module.html#torch.nn.Module.register_full_backward_hook for more details.
+  loss.backward()
+C:\Users\Mathivadhana\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\opacus\accountants\analysis\prv\prvs.py:67: RuntimeWarning: divide by zero encountered in log
+  z = np.log(np.where(t > np.log(1 - q), (np.exp(t) + q - 1) / q, 1))
+C:\Users\Mathivadhana\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\opacus\accountants\analysis\prv\prvs.py:70: RuntimeWarning: divide by zero encountered in log
+  t > np.log(1 - q),
+C:\Users\Mathivadhana\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\opacus\privacy_engine.py:98: UserWarning: Secure RNG turned off. This is perfectly fine for experimentation as it allows for much faster training performance, but remember to turn it on and retrain one last time before production with ``secure_mode`` turned on.
+  warnings.warn(
+C:\Users\Mathivadhana\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\opacus\accountants\analysis\rdp.py:332: UserWarning: Optimal order is the largest alpha. Please consider expanding the range of alphas to get a tighter privacy bound.
+  warnings.warn(
+c:\Users\Mathivadhana\Downloads\fl-health-project\experiments\..\clients\client.py:139: UserWarning: Full backward hook is firing when gradients are computed with respect to module outputs since no inputs require gradients. See https://docs.pytorch.org/docs/main/generated/torch.nn.Module.html#torch.nn.Module.register_full_backward_hook for more details.
+  loss.backward()
+C:\Users\Mathivadhana\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\opacus\accountants\analysis\prv\prvs.py:67: RuntimeWarning: divide by zero encountered in log
+  z = np.log(np.where(t > np.log(1 - q), (np.exp(t) + q - 1) / q, 1))
+C:\Users\Mathivadhana\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\opacus\accountants\analysis\prv\prvs.py:70: RuntimeWarning: divide by zero encountered in log
+  t > np.log(1 - q),
+C:\Users\Mathivadhana\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\opacus\privacy_engine.py:98: UserWarning: Secure RNG turned off. This is perfectly fine for experimentation as it allows for much faster training performance, but remember to turn it on and retrain one last time before production with ``secure_mode`` turned on.
+  warnings.warn(
+C:\Users\Mathivadhana\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\opacus\accountants\analysis\rdp.py:332: UserWarning: Optimal order is the largest alpha. Please consider expanding the range of alphas to get a tighter privacy bound.
+  warnings.warn(
+c:\Users\Mathivadhana\Downloads\fl-health-project\experiments\..\clients\client.py:139: UserWarning: Full backward hook is firing when gradients are computed with respect to module outputs since no inputs require gradients. See https://docs.pytorch.org/docs/main/generated/torch.nn.Module.html#torch.nn.Module.register_full_backward_hook for more details.
+  loss.backward()
+C:\Users\Mathivadhana\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\opacus\accountants\analysis\prv\prvs.py:67: RuntimeWarning: divide by zero encountered in log
+  z = np.log(np.where(t > np.log(1 - q), (np.exp(t) + q - 1) / q, 1))
+C:\Users\Mathivadhana\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\opacus\accountants\analysis\prv\prvs.py:70: RuntimeWarning: divide by zero encountered in log
+  t > np.log(1 - q),
+C:\Users\Mathivadhana\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\opacus\privacy_engine.py:98: UserWarning: Secure RNG turned off. This is perfectly fine for experimentation as it allows for much faster training performance, but remember to turn it on and retrain one last time before production with ``secure_mode`` turned on.
+  warnings.warn(
+C:\Users\Mathivadhana\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\opacus\accountants\analysis\rdp.py:332: UserWarning: Optimal order is the largest alpha. Please consider expanding the range of alphas to get a tighter privacy bound.
+  warnings.warn(
+c:\Users\Mathivadhana\Downloads\fl-health-project\experiments\..\clients\client.py:139: UserWarning: Full backward hook is firing when gradients are computed with respect to module outputs since no inputs require gradients. See https://docs.pytorch.org/docs/main/generated/torch.nn.Module.html#torch.nn.Module.register_full_backward_hook for more details.
+  loss.backward()
+C:\Users\Mathivadhana\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\opacus\accountants\analysis\prv\prvs.py:67: RuntimeWarning: divide by zero encountered in log
+  z = np.log(np.where(t > np.log(1 - q), (np.exp(t) + q - 1) / q, 1))
+C:\Users\Mathivadhana\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\opacus\accountants\analysis\prv\prvs.py:70: RuntimeWarning: divide by zero encountered in log
+  t > np.log(1 - q),
+MetricsReporter initialized with backend URL: http://localhost:8080/api/v1/fl
+Successfully started training run #10 on backend.
+============================================================
+ASFA FEDERATED LEARNING EXPERIMENT
+============================================================
+Clients: 5, Rounds: 5
+Aggregation: median
+Attackers: 30% (label_flip)
+Quarantine: 3 rounds, Rollback threshold: 0.15
+============================================================
+Initializing dataset manager for pathmnist (5 clients)...
+Attacker assignments: {0: 'label_flip', 1: None, 2: None, 3: None, 4: None}
+Set client 0 dataset size limit to 20 (Requested: 20)
+Set client 1 dataset size limit to 20 (Requested: 20)
+Set client 2 dataset size limit to 20 (Requested: 20)
+Set client 3 dataset size limit to 20 (Requested: 20)
+Set client 4 dataset size limit to 20 (Requested: 20)
+Round   1/5 | Acc: 0.1240 | Loss: 2.2157 | eps: 10.00 | Q: 0 | RB: 0 | Time: 33.6s
+Round   2/5 | Acc: 0.1220 | Loss: 2.2300 | eps: 10.00 | Q: 0 | RB: 0 | Time: 30.4s
+Round   3/5 | Acc: 0.1280 | Loss: 2.2420 | eps: 10.00 | Q: 0 | RB: 0 | Time: 30.9s
+Round   4/5 | Acc: 0.1140 | Loss: 2.2490 | eps: 10.00 | Q: 0 | RB: 0 | Time: 30.7s
+Round   5/5 | Acc: 0.1140 | Loss: 2.2534 | eps: 10.00 | Q: 0 | RB: 0 | Time: 30.7s
+
+[SUCCESS] Results saved to results/asfa_pathmnist_20260713_172058.csv
+Successfully completed training run #10 on backend.
+[SUCCESS] Plots saved: ['results/plots\\asfa_pathmnist_performance.png', 'results/plots\\asfa_pathmnist_privacy.png']
+
+ASFA Summary: {'num_rollbacks': 0, 'num_quarantined_now': 0, 'total_quarantine_events': 0, 'num_checkpoints': 5, 'best_val_acc': 0.128, 'best_checkpoint_round': 3}

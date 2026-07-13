@@ -1,0 +1,32 @@
+# Java/Maven
+backend/target/
+backend/.mvn/
+backend/*.jar
+backend/*.war
+
+# Node/React
+frontend/node_modules/
+frontend/dist/
+frontend/.env*
+frontend/npm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+env/
+checkpoints/
+
+# OS/IDE
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.DS_Store

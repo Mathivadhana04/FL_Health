@@ -1,0 +1,35 @@
+# ASFA full-stack experiment - DP + robust aggregation + self-healing
+experiment_name: "asfa_pathmnist"
+dataset: "pathmnist"
+num_clients: 10
+num_rounds: 30
+local_epochs: 5
+batch_size: 32
+learning_rate: 0.001
+device: "cpu"
+
+# Data distribution
+non_iid: true
+non_iid_alpha: 0.5
+
+# High attacker fraction to test ASFA defenses
+attacker_fraction: 0.4
+attack_type: "label_flip"
+
+# DP configuration
+use_dp: true
+noise_multiplier: 1.0
+max_grad_norm: 1.0
+target_epsilon: 10.0
+delta: 1e-5
+
+# Robust aggregation
+aggregation_method: "median"  # Options: fedavg, median, trimmed_mean, cosine_filter
+trim_fraction: 0.2
+similarity_threshold: 0.5
+
+# ASFA healing parameters
+quarantine_rounds: 3
+rollback_drop_threshold: 0.15
+anomaly_percentile: 80.0
+z_score_threshold: 2.5

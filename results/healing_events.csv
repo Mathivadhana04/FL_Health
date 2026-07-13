@@ -1,0 +1,6 @@
+timestamp,round_num,event_type,details
+1783945636.622769,1,checkpoint,"{'path': 'checkpoints\\round_1.pt', 'val_accuracy': 0.1, 'best_so_far': True}"
+1783945715.6363838,2,checkpoint,"{'path': 'checkpoints\\round_2.pt', 'val_accuracy': 0.102, 'best_so_far': True}"
+1783945791.4979827,3,checkpoint,"{'path': 'checkpoints\\round_3.pt', 'val_accuracy': 0.116, 'best_so_far': True}"
+1783945867.887742,4,checkpoint,"{'path': 'checkpoints\\round_4.pt', 'val_accuracy': 0.116, 'best_so_far': True}"
+1783945944.0975034,5,checkpoint,"{'path': 'checkpoints\\round_5.pt', 'val_accuracy': 0.112, 'best_so_far': False}"
