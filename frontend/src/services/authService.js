@@ -1,6 +1,11 @@
 import axios from 'axios';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api/v1';
+let API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api/v1';
+
+// If VITE_API_URL contains the /fl suffix (which is for metrics), strip it for auth endpoints
+if (API_BASE_URL.endsWith('/fl')) {
+  API_BASE_URL = API_BASE_URL.slice(0, -3);
+}
 
 const api = axios.create({
   baseURL: API_BASE_URL,
