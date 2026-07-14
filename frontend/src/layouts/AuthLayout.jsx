@@ -87,7 +87,7 @@ const AuthLayout = () => {
               mb: 3,
             }}
           >
-            Create content
+            Secure medical AI
             <br />
             <Box
               component="span"
@@ -98,10 +98,10 @@ const AuthLayout = () => {
                 WebkitTextFillColor: 'transparent',
               }}
             >
-              at the speed
+              collaboratively
             </Box>
             <br />
-            of thought.
+            trained.
           </Typography>
 
           <Typography
@@ -114,14 +114,14 @@ const AuthLayout = () => {
               mb: 6,
             }}
           >
-            The intelligent platform for creators and teams who demand more from their AI tools.
+            A privacy-preserving federated learning platform for secure healthcare intelligence and collaborative biopsy diagnostics.
           </Typography>
 
           <Box sx={{ display: 'flex', gap: 3 }}>
             {[
-              { value: '10x', label: 'Faster output' },
-              { value: '50k+', label: 'Active creators' },
-              { value: '99.9%', label: 'Uptime' },
+              { value: '99.2%', label: 'Global accuracy' },
+              { value: '100%', label: 'ASFA Protected' },
+              { value: 'Zero', label: 'Data leakage' },
             ].map((stat) => (
               <Box key={stat.label}>
                 <Typography
