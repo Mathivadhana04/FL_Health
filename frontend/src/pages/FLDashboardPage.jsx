@@ -54,7 +54,10 @@ import {
   Legend
 } from 'recharts';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8080/api/v1/fl';
+let API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8080/api/v1/fl';
+if (!API_BASE.endsWith('/fl')) {
+  API_BASE = API_BASE + '/fl';
+}
 
 export default function FLDashboardPage() {
   const navigate = useNavigate();
