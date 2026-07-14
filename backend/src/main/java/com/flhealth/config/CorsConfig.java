@@ -20,8 +20,15 @@ public class CorsConfig {
     @Bean
     public CorsFilter corsFilter() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowCredentials(true);
-        config.setAllowedOrigins(Arrays.asList(allowedOrigins.split(",")));
+        
+        // In cloud mode allow all origins so Vercel can talk to Render
+        boolean isCloud = System.getenv("IS_CLOUD") != null || System.getenv("RENDER") != null;
+        if (isCloud) {
+            config.addAllowedOriginPattern("*");
+        } else {
+            config.setAllowCredentials(true);
+            config.setAllowedOrigins(Arrays.asList(allowedOrigins.split(",")));
+        }
         config.setAllowedHeaders(List.of(
                 "Origin",
                 "Content-Type",
