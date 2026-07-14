@@ -383,7 +383,17 @@ export default function FLDashboardPage() {
   // WebSocket connection to SockJS/STOMP
   const connectWebSocket = (runId) => {
     disconnectWebSocket();
-    const socket = new SockJS('http://localhost:8080/ws');
+    
+    // Dynamically derive WebSocket URL from API_BASE to handle HTTPS/WSS correctly
+    let wsUrl = 'http://localhost:8080/ws';
+    try {
+      const url = new URL(API_BASE);
+      wsUrl = `${url.protocol}//${url.host}/ws`;
+    } catch (e) {
+      console.error("Failed to parse API_BASE for WebSocket URL", e);
+    }
+
+    const socket = new SockJS(wsUrl);
     const client = Stomp.over(socket);
     client.debug = null; // Disable excessive console debugs
 
