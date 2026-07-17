@@ -9,6 +9,7 @@ if (API_BASE_URL.endsWith('/fl')) {
 
 const api = axios.create({
   baseURL: API_BASE_URL,
+  timeout: 20000, // 20 seconds timeout to prevent infinite spinner on connection hang
   headers: {
     'Content-Type': 'application/json',
   },

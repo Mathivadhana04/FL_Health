@@ -26,6 +26,7 @@ application:
       expiration: 86400000
   cors:
     allowed-origins: ${CORS_ORIGINS:http://localhost:5173,http://localhost:3000}
+  python-path: ${PYTHON_PATH:C:\Users\Mathivadhana\AppData\Local\Python\bin\python.exe}
 
 logging:
   level:

@@ -31,6 +31,9 @@ public class FederatedLearningService {
     @Value("${application.cors.allowed-origins}")
     private String allowedOrigins;
 
+    @Value("${application.python-path:python}")
+    private String pythonPath;
+
     // Path to the Python FL project directory
     private final String pythonProjectDir = "c:\\Users\\Mathivadhana\\Downloads\\fl-health-project";
 
@@ -182,7 +185,7 @@ public class FederatedLearningService {
             
             // Spawn Python process. Config points to active_run.yaml
             ProcessBuilder pb = new ProcessBuilder(
-                    "python",
+                    pythonPath,
                     "experiments/run_fl_asfa.py",
                     "--config",
                     "configs/active_run.yaml"

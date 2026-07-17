@@ -17,35 +17,35 @@ import { useAuth } from '../context/AuthContext';
 
 const inputSx = {
   '& .MuiOutlinedInput-root': {
-    fontFamily: '"DM Sans", sans-serif',
+    fontFamily: '"Plus Jakarta Sans", sans-serif',
     fontSize: '15px',
     color: '#e2e8f0',
-    background: 'rgba(255,255,255,0.04)',
-    borderRadius: '12px',
-    transition: 'all 0.2s ease',
+    background: 'rgba(255,255,255,0.03)',
+    borderRadius: '14px',
+    transition: 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)',
     '& fieldset': {
-      borderColor: 'rgba(255,255,255,0.1)',
+      borderColor: 'rgba(255,255,255,0.08)',
       borderWidth: '1.5px',
     },
     '&:hover fieldset': {
-      borderColor: 'rgba(124,58,237,0.5)',
+      borderColor: 'rgba(124,58,237,0.4)',
     },
     '&.Mui-focused fieldset': {
       borderColor: '#7c3aed',
       borderWidth: '1.5px',
     },
     '&.Mui-focused': {
-      background: 'rgba(124,58,237,0.06)',
+      background: 'rgba(124,58,237,0.04)',
     },
   },
   '& .MuiInputLabel-root': {
-    fontFamily: '"DM Sans", sans-serif',
+    fontFamily: '"Plus Jakarta Sans", sans-serif',
     fontSize: '14px',
-    color: 'rgba(255,255,255,0.35)',
+    color: 'rgba(255,255,255,0.4)',
     '&.Mui-focused': { color: '#7c3aed' },
   },
   '& .MuiFormHelperText-root': {
-    fontFamily: '"DM Sans", sans-serif',
+    fontFamily: '"Plus Jakarta Sans", sans-serif',
     fontSize: '12px',
     mt: 0.5,
   },
@@ -88,11 +88,11 @@ const LoginPage = () => {
     <Box>
       <Typography
         sx={{
-          fontFamily: '"Syne", sans-serif',
-          fontSize: '30px',
+          fontFamily: '"Outfit", sans-serif',
+          fontSize: '32px',
           fontWeight: 800,
           color: '#fff',
-          letterSpacing: '-0.8px',
+          letterSpacing: '-0.5px',
           mb: 1,
         }}
       >
@@ -100,10 +100,10 @@ const LoginPage = () => {
       </Typography>
       <Typography
         sx={{
-          fontFamily: '"DM Sans", sans-serif',
+          fontFamily: '"Plus Jakarta Sans", sans-serif',
           fontSize: '15px',
-          color: 'rgba(255,255,255,0.4)',
-          mb: 4,
+          color: 'rgba(255,255,255,0.45)',
+          mb: 4.5,
         }}
       >
         Sign in to your account to continue
@@ -113,12 +113,12 @@ const LoginPage = () => {
         <Alert
           severity="error"
           sx={{
-            mb: 3,
-            borderRadius: '12px',
-            background: 'rgba(239,68,68,0.1)',
-            border: '1px solid rgba(239,68,68,0.25)',
+            mb: 3.5,
+            borderRadius: '14px',
+            background: 'rgba(239,68,68,0.08)',
+            border: '1px solid rgba(239,68,68,0.2)',
             color: '#fca5a5',
-            fontFamily: '"DM Sans", sans-serif',
+            fontFamily: '"Plus Jakarta Sans", sans-serif',
             fontSize: '14px',
             '& .MuiAlert-icon': { color: '#f87171' },
           }}
@@ -130,7 +130,7 @@ const LoginPage = () => {
       <Box
         component="form"
         onSubmit={handleSubmit(onSubmit)}
-        sx={{ display: 'flex', flexDirection: 'column', gap: 2.5 }}
+        sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}
       >
         <TextField
           label="Email address"
@@ -185,21 +185,21 @@ const LoginPage = () => {
           disabled={isSubmitting}
           sx={{
             mt: 1,
-            py: 1.6,
-            borderRadius: '12px',
+            py: 1.8,
+            borderRadius: '14px',
             background: 'linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%)',
             color: '#fff',
-            fontFamily: '"Syne", sans-serif',
+            fontFamily: '"Outfit", sans-serif',
             fontSize: '15px',
             fontWeight: 700,
-            letterSpacing: '0.2px',
+            letterSpacing: '0.5px',
             textTransform: 'none',
-            boxShadow: '0 4px 24px rgba(124,58,237,0.35)',
-            transition: 'all 0.2s ease',
+            boxShadow: '0 4px 24px rgba(124,58,237,0.25)',
+            transition: 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)',
             '&:hover': {
               background: 'linear-gradient(135deg, #6d28d9 0%, #2563eb 100%)',
-              boxShadow: '0 6px 32px rgba(124,58,237,0.5)',
-              transform: 'translateY(-1px)',
+              boxShadow: '0 6px 32px rgba(124,58,237,0.4)',
+              transform: 'translateY(-1.5px)',
             },
             '&:active': { transform: 'translateY(0)' },
             '&.Mui-disabled': {
@@ -218,9 +218,9 @@ const LoginPage = () => {
 
       <Typography
         sx={{
-          mt: 4,
+          mt: 4.5,
           textAlign: 'center',
-          fontFamily: '"DM Sans", sans-serif',
+          fontFamily: '"Plus Jakarta Sans", sans-serif',
           fontSize: '14px',
           color: 'rgba(255,255,255,0.35)',
         }}

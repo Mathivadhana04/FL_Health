@@ -41,6 +41,7 @@ import SendIcon from '@mui/icons-material/Send';
 import SecurityIcon from '@mui/icons-material/Security';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+axios.defaults.timeout = 20000; // 20 seconds timeout to prevent infinite loading spinners on network hang
 import SockJS from 'sockjs-client';
 import Stomp from 'stompjs';
 import {

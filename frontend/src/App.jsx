@@ -19,13 +19,13 @@ const theme = createTheme({
     text: { primary: '#e2e8f0', secondary: 'rgba(255,255,255,0.45)' },
   },
   typography: {
-    fontFamily: '"DM Sans", sans-serif',
+    fontFamily: '"Plus Jakarta Sans", sans-serif',
   },
   components: {
     MuiCssBaseline: {
       styleOverrides: {
         '@import': [
-          "url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap')",
+          "url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap')",
         ],
         body: {
           background: '#0a0a0f',
