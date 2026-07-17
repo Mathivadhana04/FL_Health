@@ -39,7 +39,9 @@ import RefreshIcon from '@mui/icons-material/Refresh';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import SendIcon from '@mui/icons-material/Send';
 import SecurityIcon from '@mui/icons-material/Security';
+import LogoutIcon from '@mui/icons-material/Logout';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 import axios from 'axios';
 axios.defaults.timeout = 20000; // 20 seconds timeout to prevent infinite loading spinners on network hang
 import SockJS from 'sockjs-client';
@@ -62,7 +64,13 @@ if (!API_BASE.endsWith('/fl')) {
 
 export default function FLDashboardPage() {
   const navigate = useNavigate();
+  const { user, logout } = useAuth();
   const [activeTab, setActiveTab] = useState(0);
+
+  const handleLogout = () => {
+    logout();
+    navigate('/login');
+  };
 
   // FL Config States
   const [numClients, setNumClients] = useState(10);
@@ -604,21 +612,31 @@ export default function FLDashboardPage() {
     <Box sx={{ minHeight: '100vh', background: '#0a0a0f', p: 3, color: '#fff' }}>
       <Container maxWidth="xl">
         {/* Top Header Navigation */}
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
-          <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-            <IconButton onClick={() => navigate('/dashboard')} sx={{ color: '#7c3aed' }}>
+        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3, flexWrap: 'wrap', gap: 2 }}>
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
+            <IconButton onClick={() => navigate('/dashboard')} sx={{ color: '#7c3aed', background: 'rgba(255,255,255,0.02)', '&:hover': { background: 'rgba(124,58,237,0.1)' } }}>
               <ArrowBackIcon />
             </IconButton>
-            <Typography variant="h4" sx={{ fontFamily: '"Syne", sans-serif', fontWeight: 800 }}>
-              FL Healthcare Dashboard
+            <Typography variant="h4" sx={{ fontFamily: '"Outfit", sans-serif', fontWeight: 800, color: '#fff', fontSize: { xs: '22px', md: '28px' } }}>
+              FL Healthcare Workspace
             </Typography>
           </Box>
-          <Box>
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
             <Chip
               label={runStatus}
               color={runStatus === 'RUNNING' ? 'primary' : runStatus === 'COMPLETED' ? 'success' : runStatus === 'FAILED' ? 'error' : 'default'}
-              sx={{ fontWeight: 'bold', fontSize: '14px', px: 1 }}
+              sx={{ fontWeight: 700, fontFamily: '"Outfit", sans-serif', fontSize: '13px', px: 1.5, borderRadius: '8px' }}
             />
+            {user && (
+              <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)', py: 0.75, px: 2, borderRadius: '12px' }}>
+                <Typography sx={{ fontSize: '14px', fontWeight: 600, color: '#e2e8f0', fontFamily: '"Plus Jakarta Sans", sans-serif' }}>
+                  {user.firstName}
+                </Typography>
+                <IconButton onClick={handleLogout} size="small" sx={{ color: '#fca5a5', '&:hover': { color: '#ef4444', background: 'rgba(239,68,68,0.1)' } }} title="Sign Out">
+                  <LogoutIcon fontSize="small" />
+                </IconButton>
+              </Box>
+            )}
           </Box>
         </Box>
 
